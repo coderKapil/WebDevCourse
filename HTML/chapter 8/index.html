@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- forms  -->
+    <form action="../chapter 7/index.html">
+        <label for="firstname">First Name</label> <br>
+        <input id="firstname" name="firstname" type="text" required> <br>
+        <label for="lastname">Last Name</label> <br>
+        <input id="lastname" name="lastname" type="text" required> <br>
+        <label for="rollno">Roll no </label> <br>
+        <input id="rollno" name="rollno" type="number" min="0" max="10" value="5" required> <br>
+        <label for="Email">Email</label> <br>
+        <input id="Email" name="email" type="email" placeholder="xyz@gmail.com" required> <br>
+        <label for="Phone number">Phone Number</label> <br>
+        <input id="Phone number" name="Phone" type="number" required>
+
+        <p>Select you gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <label for="others">Others</label>
+        <input type="radio" name="gender" id="others">
+        <br> <br>
+
+        <label for="class">Select class</label> <br> <br>
+        <select id="class">
+            <option value="0">Select your class</option>
+            <option value="1">Class 1</option>
+            <option value="2">Class 2</option>
+            <option value="3">Class 3</option>
+            <option value="4">Class 4</option>
+            <option value="5">Class 5</option>
+        </select>
+
+        <br> <br>
+
+        <!-- if you want when you search and ur item get selected the use datalist  -->
+
+        <label for="ice-cream-choice">Choose a flavor:</label> <br>
+        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+        <datalist id="ice-cream-flavors">
+            <option value="Chocolate">
+            <option value="Coconut">
+            <option value="Mint">
+            <option value="Strawberry">
+            <option value="Vanilla">
+        </datalist>
+
+        <br> <br>
+
+        <label for="about">About my self</label> <br>
+        <textarea name="about" id="about" cols="30" rows="10"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <!-- <label for="date">Date of birth and time</label>
+        <input name="date" id="date" type="datetime-local"> -->
+    </form>
+</body>
+
+</html>

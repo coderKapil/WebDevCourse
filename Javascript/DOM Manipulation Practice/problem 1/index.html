@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+
+<body>
+    <p id='text'>JavaScript Exercises - w3resource</p>
+    <div>
+        <button id="jsstyle" onclick="js_style()">Style</button>
+    </div>
+
+    <script>
+        const text = document.getElementById("jsstyle")
+        // console.log(text);
+        function js_style() {
+            text.style.color = "Red"
+            text.style.fontSize = "20px"
+            text.style.fontFamily = "600"
+            text.style.borderRadius = "12px"
+            text.style.backgroundColor = "grey"
+        }
+    </script>
+</body>
+
+</html>

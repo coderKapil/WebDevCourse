@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Using javascript change href url to https://dosomecoding.com -->
+    <a href="https://google.com">Google.com</a>
+
+    <script>
+        const changeUrl = document.getElementsByTagName("a")[0]
+        changeUrl.setAttribute("href", " https://dosomecoding.com")
+        changeUrl.innerText = "DO Some Coding"
+        // console.log(changeUrl);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5 | Grid</title>
+    <style>
+        .grid_container {
+            /* height: 500px; */
+            background-color: orange;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            /* place-content: center; */
+            /* place-content: start; */
+            /* place-content: end; */
+
+            place-items: center;
+            place-items: start;
+            place-items: end;
+
+
+            /* grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+            /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
+            gap: 20px;
+            padding: 10px;
+            height: 900px;
+            /* grid-template-areas:
+                "item1 item2 item3 item7"
+                "item1 item4 item6 item7"
+                "item5 item5 item5 item7"; */
+        }
+
+        .box {
+            background-color: rgb(126, 178, 126);
+            padding: 20px 0;
+            width: 100px;
+        }
+
+        #item1 {
+            place-self: center;
+        }
+
+        /* #item1 {
+            grid-column: 1/3;
+            grid-row: 1/4;
+        }
+
+        #item1 {
+            grid-area: item1;
+        }
+
+        #item2 {
+            grid-area: item2;
+        }
+
+        #item3 {
+            grid-area: item3;
+        }
+
+        #item4 {
+            grid-area: item4;
+        }
+
+        #item5 {
+            grid-area: item5;
+        }
+
+        #item6 {
+            grid-area: item6;
+        }
+
+        #item7 {
+            grid-area: item7;
+        } */
+
+        /* #item7 {
+            background-color: red;
+            grid-row: 3/ span 5;
+            grid-column: 3;
+        } */
+        /* #item5 {
+            background-color: red;
+            grid-area: 2/3/4/5;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="grid_container">
+        <div class="box" id="item1">1</div>
+        <div class="box" id="item2">2</div>
+        <div class="box" id="item3">3</div>
+        <div class="box" id="item4">4</div>
+        <div class="box" id="item5">5</div>
+        <div class="box" id="item6">6</div>
+        <!-- <div class="box" id="item7">7</div> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .text {
+            background-color: blanchedalmond;
+            margin-top: 4rem;
+            margin-left: 4rem;
+            position: relative
+        }
+
+        /* .text::before {
+            content: "*";
+            color: red;
+            position: absolute;
+            top: -20%;
+            left: -12px;
+        } */
+        .text::after {
+            content: "*";
+            color: red;
+            position: relative;
+            top: -20%;
+            left: -12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">Hello Coders</div>
+</body>
+
+</html>

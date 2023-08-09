@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* Ex of position fixed  */
+            /* position: fixed;
+            bottom: 200px;
+            left: 20px; */
+        }
+
+        /* for ex of position relative  */
+
+        /* #box1 {
+            position: relative;
+            background-color: green;
+            left: 50px;
+            top: 100px;
+        } */
+        #box1 {
+            background-color: greenyellow;
+            position: absolute;
+            /* z-index: 1; */
+            /* position: sticky;
+            top: 0; */
+            /* position: absolute;
+            bottom: 0px;
+            left: 0px; */
+        }
+
+        #box2 {
+            /* border: 2px solid black; */
+            position: relative;
+        }
+
+        /* .container {
+            position: relative;
+            background-color: aquamarine;
+            height: 600px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+    </div>
+</body>
+
+</html>

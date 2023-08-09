@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 400px;
+            width: 400px;
+            background-color: red;
+        }
+
+        /* old syntax media query  */
+
+        /* @media screen and (min-width:500px) and (max-width:700px) {
+            .box {
+                background-color: green;
+            }
+        } */
+
+        /* new syntax media query Not fully supported with all browser so it is recommended to use older syntax only */
+        @media screen and (700px > width > 500px) {
+            .box {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid problem 4</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            max-width: 1200px;
+            height: 600px;
+            margin: auto;
+            margin-top: 80px;
+            background-color: rgb(203, 203, 231);
+            gap: 20px;
+        }
+
+        .box {
+            background-color: #84EBF1;
+        }
+
+        #box1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        #box2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        #box3 {
+            grid-column-start: 3;
+            grid-column-end: 7;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        #box4 {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create Grid Layout  -->
+</body>
+<div class="container">
+    <div id="box1" class="box">1</div>
+    <div id="box2" class="box">2</div>
+    <div id="box3" class="box">3</div>
+    <div id="box4" class="box">4</div>
+</div>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .box {
+            display: grid;
+            place-items: center;
+            height: 200px;
+            width: 200px;
+            font-size: 50px;
+            background-color: rgb(203, 255, 203);
+            /* animation-name: slideFromRighttoLeft;
+            animation-duration: 0.7s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 5;
+            animation-direction: reverse; */
+            animation: slideFromRighttoLeft 1s cubic-bezier(0.8, 0.41, 0.38, 0.41) 2s infinite;
+            /* transition-property: height, width, background;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+            transition-delay: 0.7s; */
+            /* transition: all 0.3s ease-in; */
+            /* transition: transform 0.3s ease-in; */
+            /* transition: rotate 0.6s ease-in-out; */
+            /* transition: transform 0.6s ease-in-out; */
+        }
+
+        .box:hover {
+            /* height: 300px;
+            width: 300px; */
+            font-size: 50px;
+            background-color: rgb(33, 190, 33);
+            /* transform: translatex(50px); */
+            /* transform: translatey(50px); */
+            /* transform: translate(50px, 50px); */
+            /* transform: translate3D(50px, 50px, 50px); */
+
+            /* transform: rotatex(50deg); */
+            /* transform: rotatey(50deg); */
+            /* transform: rotatez(50deg); */
+
+            /* New format of writing this  */
+            /* rotate: x 50deg; */
+            /* rotate: 1 1 1 45deg; */
+
+            /* transform: scale(2); */
+            /* transform: scale3d(2.5, 1.2, 1.2); */
+            /* transform: skewX(50deg); */
+            /* transform: skewY(25deg); */
+
+            /* transform-origin: left; */
+
+            /* transition-property: height, width, background;
+            text-decoration: 0.5s;
+            transition-timing-function: ease-in;
+            transition-delay: 0.7s; */
+            /* transition: height 0.3s ease-in width 0.3s ease-in background 2.9s ease-in; */
+            /* transition: all 0.3s ease-in; */
+            /* transition: transform 0.3s ease-in; */
+            /* transition: rotate 0.6s ease-in-out; */
+            /* transition: transform 0.6s ease-in-out; */
+        }
+
+        @keyframes slideFromRighttoLeft {
+
+            0%,
+            20%,
+            80%,
+            100% {
+                translate: 0 0px;
+            }
+
+            60% {
+                translate: 0 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+
+</html>

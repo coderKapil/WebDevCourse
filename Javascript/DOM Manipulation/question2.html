@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Create a functionality to toggle button on and off -->
+    <style>
+        button {
+            border-radius: 10%;
+            border: none;
+            padding: 20px;
+            font-size: 20px;
+            min-width: 100px;
+        }
+
+        .on {
+            background: yellow;
+        }
+
+        .off {
+            background: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" class="on">ON</button>
+    <script>
+        const btnElement = document.getElementById("btn")
+        function toggleBtn() {
+            if (btnElement.classList[0] === "on") {
+                btnElement.classList.remove("on")
+                btnElement.classList.add("off")
+                btnElement.innerHTML = "OFF"
+            }
+            else {
+                btnElement.classList.remove("off")
+                btnElement.classList.add("on")
+                btnElement.innerHTML = "ON"
+            }
+        }
+
+        btnElement.addEventListener("click", toggleBtn)
+    </script>
+</body>
+
+</html>

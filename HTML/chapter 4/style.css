@@ -1,0 +1,22 @@
+h1 {
+    background-color: black;
+    color: white;
+}
+
+.primarybtn {
+    color: green;
+    background-color: red;
+    border: none;
+    border-radius: 25px;
+}
+
+#viewbtn {
+    color: wheat;
+    background-color: black;
+}
+
+#subbtn {
+    background-color: antiquewhite;
+    color: black;
+    border: none;
+}

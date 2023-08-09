@@ -1,0 +1,8 @@
+.btn {
+    padding: 6px 12px;
+    background-color: #FF0000;
+    border: 2px dotted #ad0000;
+    outline: 2px solid #ff8c8c;
+    outline-offset: 4px;
+    margin: 20px;
+}

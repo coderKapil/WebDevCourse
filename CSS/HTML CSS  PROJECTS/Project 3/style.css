@@ -1,0 +1,80 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    line-height: 1.8em;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #666;
+}
+
+.pimg1 {
+    background: url(images/image1\ \(1\).png);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background: url(images/image2\ \(1\).png);
+    min-height: 400px;
+}
+
+.pimg3 {
+    background: url(images/image3\ \(1\).png);
+    min-height: 400px;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textBG {
+    background-color: #313534;
+    color: white;
+    padding: 20px;
+}
+
+.textBG2 {
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+}
+
+.textBG3 {
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+}
+
+.section {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.section-light {
+    background-color: #F4F4F4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #313534;
+    color: #FFFFFF;
+}

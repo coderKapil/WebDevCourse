@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        button:active {
+            background-color: green;
+        }
+
+        button:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        input:focus {
+            outline: 1px solid red;
+            outline-offset: 2px;
+            border: 2px solid red;
+        }
+
+        /* .parent-element {
+            height: 500px;
+            width: 300px;
+            background-color: green;
+        } */
+
+        /* .box {
+            height: 500px;
+            min-width: 500px;
+            background-color: rgb(141, 245, 245);
+        } */
+
+        .text {
+            color: brown;
+            text-align: justify;
+            letter-spacing: 1.1px;
+            background-color: black;
+            line-height: 30px;
+            white-space: wrap;
+            /* text-align: center; */
+            /* text-align: left; */
+            /* text-align: end; */
+        }
+
+        .text sub {
+            color: orange;
+            /* vertical-align: super; */
+            /* vertical-align: text-bottom; */
+            /* vertical-align: top; */
+            /* vertical-align: bottom; */
+            vertical-align: baseline
+        }
+
+        /* Used if we are witing urdu in our website  */
+        .name {
+            /* direction: rtl; */
+            color: red;
+            direction: ltr;
+            /* text-decoration: underline; */
+            /* text-decoration: overline; */
+            /* text-decoration: line-through; */
+            /* text-decoration: overline underline; */
+            unicode-bidi: bidi-override;
+        }
+
+        #upper {
+            text-transform: uppercase;
+        }
+
+        #lower {
+            text-transform: lowercase;
+        }
+
+        #capital {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="upper">This text is transformed to upper case</p>
+    <p id="lower">This text is transformed to lower case</p>
+    <p id="capital">This text is transformed to capitalise</p>
+    <p class="name">My name is kapil rana</p>
+    <p class="text">This is a sample code Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae rerum fugiat
+        voluptatem, earum esse sit cupiditate quas asperiores accusantium quos ratione? Alias deleniti cum laborum at
+        nisi fugit. Maiores tempore voluptatem quia dolor voluptatibus voluptatum fugiat, in ducimus molestiae expedita,
+        optio dolorem blanditiis enim aperiam animi, facere consectetur est! Incidunt velit nesciunt numquam excepturi
+        soluta deleniti saepe qui laboriosam quo?</p>
+    <div class="parent-element">
+        <div class="box"></div>
+    </div>
+    <input>
+    <button>Click me</button>
+</body>
+
+</html>

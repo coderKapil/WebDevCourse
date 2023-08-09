@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .active {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header data-new="coding" id="nav" ">
+        <nav>
+            <ul>
+                <li class=" active">Home</li>
+        <li>About</li>
+        <li>Dashboard</li>
+        </ul>
+        </nav>
+    </header>
+    <main class=" common">
+        <!-- <h1 name="sample">This is text</h1> -->
+        <button id="changebtn" onclick="alertme(this)">Color Change</button>
+        <button id="changebtn">Color Change</button>
+    </main>
+    <footer class="common">
+        This is a footert text
+    </footer>
+    <script>
+        // console.log(document.body);
+        // console.log(document.body.parentNode);
+        // console.log(document.body.childNodes);
+        // console.log(document.body.firstChild);
+        // console.log(document.body.lastChild);
+        // console.log(document.body.childNodes[1]);
+        // console.log(document.body.children);
+        // console.log(document.body.firstElementChild.firstElementChild.firstElementChild.firstElementChild);
+        // console.log(document.body.children[1].previousElementSibling);
+        // console.log(document.body.children[1].nextElementSibling);
+        // console.log(document.body.lastElementChild);
+
+        //how to access element by using ID
+        // console.log(document.getElementById("nav"));
+
+        //how to access element by using Class
+        // console.log(document.getElementsByClassName("common"));
+
+        //how to access element by using name
+        // console.log(document.getElementsByName("sample"));
+
+        //how to access element by using TagName
+        // console.log(document.getElementsByTagName("footer"));
+
+        //Query Selector:using specific query we can select elements for selecting element with id we can use → #someId → here we need to append ‘#’ to get element by its id for selecting element with class we can use → .someClass → here we need to append ‘.’ to get element by its class This will return only one element
+
+        // console.log(document.querySelector("#nav"));
+        // console.log(document.querySelector(".common"));
+        // console.log(document.querySelector("footer"));
+
+        //QuerySelectorAll → its behave same as queryselector but its return multiple elements nodes
+        // const commonElements = console.log(document.querySelectorAll(".common"));
+
+        // for (let common of commonElements) {
+        //     console.log(common);
+        // }
+
+        //converting to array
+        // const converedCommonElements = Array.from(commonElements)
+
+        // const commonElements = document.querySelectorAll("ul > li:last-child")
+        // console.log(commonElements[0].innerHTML);
+
+        //for getting Attribute Value
+        // const attributeValue = document.getElementById("nav").getAttribute("id")
+        // const attributeValue = document.getElementById("nav").getAttribute("style")
+        // console.log(attributeValue);
+
+        //for setting Attribute values
+        // document.getElementById("nav").setAttribute("data-randomValues", 5)
+        // document.getElementById("nav").removeAttribute("data-randomValues")
+
+        // console.log(document.getElementById("nav").dataset.new);
+
+        //More Operations we can perform on element nodes
+        // const newFooterText = "This is new text"
+        // const heading = document.createElement("h1")
+        // const text = document.createTextNode("Hi i am base")
+        // const text1 = document.createTextNode("HI, Guys!!!")
+        // heading.append(text)
+        // heading.prepend(text1)
+        // const footer = document.getElementsByTagName("footer")[0]
+        // append(heading)
+        // footer.before(heading)
+        // footer.after(heading)
+        // footer.replaceWith(newFooterText)
+
+        // document.getElementsByTagName("nav")[0].remove()
+        // console.log(heading);
+
+        // const listItems = document.getElementsByTagName("li")
+        // console.log(listItems[0].classList.remove("active"));
+        // console.log(listItems[0].classList.add("active"));
+        // listItems[0].classList.toggle("active")
+        // listItems[0].classList.toggle("active")
+        // console.log(listItems);
+
+        // const manyhtml = `<nav>
+        //     <ul>
+        //         <li class=" active">Home</li>
+        // <li>About</li>
+        // <li>Dashboard</li>
+        // </ul>
+        // </nav>`
+        // document.querySelector("footer").innerHTML = manyhtml
+        // document.querySelector("footer").innerText = manyhtml
+
+        // document.querySelector("footer").outerHTML = manyhtml
+        function alertme(e) {
+            console.log(e.getAttribute("id"));
+            alert("You are doing wrong!!!")
+        }
+
+        const changeBtnElement = document.getElementById("changebtn")
+
+        function random(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+
+        function forChangingColor(event) {
+            const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+            document.body.style.backgroundColor = rndCol;
+        }
+
+        changeBtnElement.addEventListener("click", forChangingColor)
+        changeBtnElement.removeEventListener("click", forChangingColor)
+            // alert("You are doing wrong!!!")
+            // console.log(event);)
+    </script>
+</body>
+
+</html>

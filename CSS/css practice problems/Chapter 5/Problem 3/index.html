@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #EFC6AD;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-container {
+            display: flex;
+            width: 800px;
+            height: 350px;
+            background-color: #472F2F;
+            color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .texts {
+            display: flex;
+            font-family: 'Inter', sans-serif;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .texts h1 {
+            font-size: 64px;
+            font-weight: bold;
+
+        }
+
+        .texts h2 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .image_container {
+            flex: 1;
+            height: 350px;
+            width: 402px;
+        }
+
+        .card_circle_container {
+            position: relative;
+        }
+
+        #circle {
+            position: absolute;
+            top: -80px;
+            left: -105px;
+            z-index: -1;
+        }
+
+        #Line {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create new year card using flex
+use flex = 1 on both section
+to get equal width -->
+    <div class="container">
+        <div class="card_circle_container">
+            <div class="card-container">
+                <div class="texts">
+                    <h1>2023</h1>
+                    <h2>Happy New Year</h2>
+                </div>
+                <div class="image_container">
+                    <img src="./fireworks.png" alt="fireworks">
+                </div>
+            </div>
+            <img id="circle" src="./circle.svg" alt="circle">
+        </div>
+        <img id="Line" src="./Line 1.svg" alt="Line">
+    </div>
+</body>
+
+</div>
+
+</html>
